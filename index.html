@@ -1,0 +1,918 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Primary Meta Tags -->
+    <title>Hello Malayalam – Learn Malayalam Online for All Ages</title>
+    <meta name="title" content="Hello Malayalam – Learn Malayalam Online for All Ages" />
+    <meta name="description"
+        content="Hello Malayalam is an online Malayalam learning platform offering live classes, real tutors, and interactive lessons for kids, teens, and adults. Start reading, writing, and speaking Malayalam with confidence." />
+    <meta name="keywords"
+        content="Learn Malayalam, Malayalam classes, Malayalam tuition, Malayalam for kids, Malayalam for beginners, Online Malayalam course, Malayalam tutors, Speak Malayalam, Hello Malayalam, Malayalam lessons for adults" />
+    <meta name="author" content="Hello Malayalam Team" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hellomalayalam.com/" />
+    <meta property="og:title" content="Hello Malayalam – Learn Malayalam Online for All Ages" />
+    <meta property="og:description"
+        content="Live Malayalam classes with expert tutors for kids and adults. Learn to read, write, and speak Malayalam in an engaging and fun way." />
+    <meta property="og:image" content="https://hellomalayalam.com/images/social-preview.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://hellomalayalam.com/" />
+    <meta name="twitter:title" content="Hello Malayalam – Learn Malayalam Online for All Ages" />
+    <meta name="twitter:description"
+        content="Online Malayalam lessons for children and adults. Learn with live tutors and fun, interactive sessions." />
+    <meta name="twitter:image" content="https://hellomalayalam.com/images/social-preview.png" />
+
+    <!-- Favicon and App Icons -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icons/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/icons/android-chrome-512x512.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Windows Tiles -->
+    <meta name="msapplication-TileColor" content="#007BFF" />
+    <meta name="msapplication-TileImage" content="/icons/mstile-144x144.png" />
+    <meta name="theme-color" content="#007BFF" />
+
+    <!-- Fonts and Stylesheets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap"
+        rel="stylesheet" />
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-icons.css" rel="stylesheet" />
+    <link href="css/templatemo-topic-listing.css" rel="stylesheet" />
+
+
+</head>
+
+
+<style>
+    :root {
+        scroll-padding-top: 80px;
+        /* Adjust this to match your navbar height */
+    }
+
+    /* Contact Section Specific Styles */
+    .contact-section .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 0.5rem;
+    }
+
+    .contact-section .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+    }
+
+    .contact-section .card-header {
+        padding: 1.25rem 1.25rem 0;
+    }
+
+    .contact-section .card-body {
+        padding: 1.25rem;
+    }
+
+    .contact-section .google-map {
+        min-height: 300px;
+        border-radius: 0 0 0.5rem 0.5rem;
+    }
+
+    .contact-section address {
+        font-style: normal;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 991.98px) {
+
+        .contact-section .col-lg-5,
+        .contact-section .col-lg-7 {
+            max-width: 100%;
+            flex: 0 0 100%;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        .contact-section .card {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    /* Footer Specific Styles */
+    .footer-brand {
+        max-width: 300px;
+    }
+
+    .footer-links li a {
+        transition: all 0.3s ease;
+    }
+
+    .hover-primary:hover {
+        color: #0d6efd !important;
+        padding-left: 5px;
+    }
+
+    .contact-info li {
+        transition: all 0.3s ease;
+    }
+
+    .contact-info li:hover {
+        transform: translateX(5px);
+    }
+
+    .social-icons a {
+        transition: all 0.3s ease;
+        display: inline-block;
+    }
+
+    .social-icons a:hover {
+        transform: translateY(-3px);
+        color: #0a58ca !important;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 767.98px) {
+        .footer-brand {
+            max-width: 100%;
+            text-align: left;
+        }
+
+        .social-icons {
+            justify-content: leftr;
+        }
+
+        .footer-links,
+        .contact-info {
+            text-align: left;
+        }
+    }
+
+    /* Tab styling */
+    .nav-tabs {
+        border-bottom: 2px solid #dee2e6;
+        justify-content: center;
+    }
+
+    .nav-tabs .nav-link {
+        border: none;
+        color: #6c757d;
+        font-weight: 600;
+        padding: 1rem 1.5rem;
+        transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-tabs .nav-link:hover {
+        color: #0d6efd;
+        transform: translateY(-5px);
+    }
+
+    .nav-tabs .nav-link.active {
+        color: #0d6efd;
+        background-color: transparent;
+        border-bottom: 3px solid #0d6efd;
+        transform: translateY(-5px);
+    }
+
+    .level-icon {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    /* Card animations */
+    .custom-block {
+        transition: all 0.3s ease;
+        overflow: hidden;
+    }
+
+    .custom-block:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+    }
+
+    .custom-block-image {
+        transition: all 0.5s ease;
+    }
+
+    .custom-block:hover .custom-block-image {
+        transform: scale(1.05);
+    }
+
+    /* List item styling */
+    .list-group-item {
+        border-left: 0;
+        border-right: 0;
+        padding: 1rem 0;
+        transition: all 0.3s ease;
+    }
+
+    .list-group-item:hover {
+        background-color: #f8f9fa;
+        padding-left: 10px;
+    }
+</style>
+
+<body id="top">
+    <main>
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <div class="d-flex flex-grow-1 justify-content-between align-items-center"
+             style="text-shadow: 2px 2px 4px rgb(216, 214, 214); padding: 8px 0;">
+            <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
+                <img src="images/hello_malayalam.png" alt="Hello Malayalam Logo" style="height: 80px;" />
+            </a>
+
+            <button class="navbar-toggler order-lg-1" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link click-scroll" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link click-scroll" href="#learning-levels">Learning Levels</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link click-scroll" href="#how-it-works">How it works</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link click-scroll" href="#faqs">FAQs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link click-scroll" href="#contact">Contact</a>
+                </li>
+            </ul>
+
+            <!-- Button aligned right on desktop -->
+            <div class="d-flex mt-3 mt-lg-0">
+  <a href="our_teacher.html" class="btn btn-dark-blue rounded-pill px-4 py-2 fw-semibold shadow-sm">
+    Our Teacher
+  </a>
+</div>
+
+<style>
+/* Dark Blue Button */
+.btn-dark-blue {
+  background-color: #003366; /* Dark blue */
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-dark-blue:hover {
+  background-color: #001f4d; /* Even darker blue on hover */
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 51, 102, 0.4);
+}
+</style>
+
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- WhatsApp Floating Button with Hover Popup -->
+<a href="https://wa.me/919495374294" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <div class="chat-wrapper">
+        <span class="popup-text">WhatsApp Now</span>
+        <div class="chat-circle">
+            <i class="bi bi-whatsapp fs-4"></i>
+        </div>
+    </div>
+</a>
+
+<style>
+    .whatsapp-float {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+        text-decoration: none;
+    }
+
+    .chat-wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .popup-text {
+        opacity: 0;
+        visibility: hidden;
+        background-color: #25D366;
+        color: white;
+        padding: 6px 12px;
+        border-radius: 8px;
+        margin-right: 10px;
+        white-space: nowrap;
+        font-size: 14px;
+        transition: all 0.3s ease;
+        transform: translateX(10px);
+    }
+
+    .chat-circle {
+        background-color: #25D366;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        animation: wavePulse 2s infinite;
+        color: white;
+        font-size: 24px;
+        transition: transform 0.3s ease;
+    }
+
+    /* Hover Behavior */
+    .chat-wrapper:hover .popup-text {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+    }
+
+    .chat-wrapper:hover .chat-circle {
+        transform: translateX(-10px); /* move icon slightly left */
+    }
+
+    /* Wave Pulse Animation */
+    @keyframes wavePulse {
+        0% {
+            transform: scale(1);
+            box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+        }
+
+        70% {
+            transform: scale(1.05);
+            box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+        }
+
+        100% {
+            transform: scale(1);
+            box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+        }
+    }
+</style>
+
+
+<!-- Include Bootstrap Icons if not already -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+
+
+
+        <section class="hero-section d-flex justify-content-center align-items-center" id="home">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-12 mx-auto">
+                        <h1 class="text-white text-center">Discover. Learn. Enjoy Malayalam</h1>
+                        <h6 class="text-center" style="color: #dee2e6;">A friendly and accessible Malayalam language
+                            platform for all learners.</h6>
+                        <form method="get" class="custom-form mt-4 pt-2 mb-lg-0 mb-5" role="search">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-12 mb-4 mb-lg-0">
+                        <div class="custom-block bg-white shadow-lg">
+                            <a href="#">
+                                <div class="d-flex">
+                                    <div>
+                                        <h5 class="mb-2">Malayalam Alphabet</h5>
+                                        <p>Begin your journey with the beautiful Malayalam script through engaging and
+                                            interactive activities.</p>
+                                    </div>
+                                </div>
+                                <img src="images/2151657411.jpg" class="custom-block-image img-fluid" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-12">
+                        <div class="custom-block custom-block-overlay">
+                            <div class="d-flex flex-column h-100">
+                                <img src="./images/2151657320.jpg" class="custom-block-image img-fluid" alt="">
+
+                                <div class="custom-block-overlay-text d-flex">
+                                    <div>
+                                        <h5 class="text-white mb-2">For Parents & Learners</h5>
+                                        <p class="text-white">Learn Malayalam together with easy and fun lessons perfect
+                                            for families, parents, and beginners.</p>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="social-share d-flex">
+                                    <p class="text-white me-4"></p>
+                                    <a href="#learning-levels" class="btn custom-btn mt-2 mt-lg-3">Learn More</a>
+                                    <a href="#" class="custom-icon bi-bookmark ms-auto"></a>
+                                </div>
+                                <div class="section-overlay"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Modern Learning Levels Section Without Ticks -->
+<section class="py-5 bg-light" id="learning-levels">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold display-6 mb-3">Our Learning Levels</h2>
+            <p class="text-muted fs-5">Discover your step-by-step journey to learning Malayalam with ease and fun.</p>
+        </div>
+
+        <ul class="nav nav-pills justify-content-center gap-3 mb-5 flex-wrap" id="levelsTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active rounded-pill px-4 py-2 shadow-sm" id="level1-tab" data-bs-toggle="tab" data-bs-target="#level1-tab-pane" type="button" role="tab" aria-controls="level1-tab-pane" aria-selected="true">Beginner</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link rounded-pill px-4 py-2 shadow-sm" id="level2-tab" data-bs-toggle="tab" data-bs-target="#level2-tab-pane" type="button" role="tab" aria-controls="level2-tab-pane" aria-selected="false">Reading Corner</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link rounded-pill px-4 py-2 shadow-sm" id="level3-tab" data-bs-toggle="tab" data-bs-target="#level3-tab-pane" type="button" role="tab" aria-controls="level3-tab-pane" aria-selected="false">Writing</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link rounded-pill px-4 py-2 shadow-sm" id="level4-tab" data-bs-toggle="tab" data-bs-target="#level4-tab-pane" type="button" role="tab" aria-controls="level4-tab-pane" aria-selected="false">Conversation</button>
+            </li>
+        </ul>
+
+        <div class="tab-content pt-3" id="levelsTabContent">
+
+            <div class="tab-pane fade show active" id="level1-tab-pane" role="tabpanel" aria-labelledby="level1-tab">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="rounded-4 overflow-hidden shadow-sm">
+                            <img src="./images/topics/harisree.jpg" alt="Beginner Level" class="img-fluid object-fit-cover" style="max-height: 400px;">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="fw-bold mb-3">Level 1: Beginner</h3>
+                        <p class="text-muted fs-5">A friendly start for learners of all ages, covering the basics of Malayalam.</p>
+                        <ul class="list-unstyled mb-4 fs-6">
+                            <li class="mb-2">• Learn Malayalam alphabets & pronunciation</li>
+                            <li class="mb-2">• Recognize and match sounds to letters</li>
+                            <li class="mb-2">• Read, write & speak basic words</li>
+                            <li>• Fun games & practice activities</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary rounded-pill px-4 py-2 shadow-sm">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="level2-tab-pane" role="tabpanel" aria-labelledby="level2-tab">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="rounded-4 overflow-hidden shadow-sm">
+                            <img src="./images/topics/reading.jpg" alt="Reading Corner Level" class="img-fluid object-fit-cover" style="max-height: 400px;">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="fw-bold mb-3">Level 2: Reading Corner</h3>
+                        <p class="text-muted fs-5">Boost your reading fluency and comprehension with guided practice.</p>
+                        <ul class="list-unstyled mb-4 fs-6">
+                            <li class="mb-2">• Read & write short sentences</li>
+                            <li class="mb-2">• Expand vocabulary & comprehension</li>
+                            <li class="mb-2">• Enjoy simple stories and texts</li>
+                            <li>• Engage with reading activities</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary rounded-pill px-4 py-2 shadow-sm">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="level3-tab-pane" role="tabpanel" aria-labelledby="level3-tab">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="rounded-4 overflow-hidden shadow-sm">
+                            <img src="./images/topics/ezhuthani.jpg" alt="Writing Level" class="img-fluid object-fit-cover" style="max-height: 400px;">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="fw-bold mb-3">Level 3: Writing</h3>
+                        <p class="text-muted fs-5">Express yourself clearly and creatively in Malayalam writing.</p>
+                        <ul class="list-unstyled mb-4 fs-6">
+                            <li class="mb-2">• Practice structured & creative writing</li>
+                            <li class="mb-2">• Learn essential words & sentences</li>
+                            <li class="mb-2">• Apply grammar in real-world contexts</li>
+                            <li>• Guided writing activities</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary rounded-pill px-4 py-2 shadow-sm">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="level4-tab-pane" role="tabpanel" aria-labelledby="level4-tab">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="rounded-4 overflow-hidden shadow-sm">
+                            <img src="./images/topics/kilikonchal.jpg" alt="Conversation Level" class="img-fluid object-fit-cover" style="max-height: 400px;">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="fw-bold mb-3">Level 4: Conversation</h3>
+                        <p class="text-muted fs-5">Confidently speak Malayalam in real-life situations.</p>
+                        <ul class="list-unstyled mb-4 fs-6">
+                            <li class="mb-2">• Practice dialogues & roleplays</li>
+                            <li class="mb-2">• Build vocabulary for daily conversations</li>
+                            <li class="mb-2">• Speak fluently & confidently</li>
+                            <li>• Learn expressions & cultural etiquette</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary rounded-pill px-4 py-2 shadow-sm">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+        <section class="timeline-section section-padding" id="how-it-works">
+            <div class="section-overlay"></div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2 class="text-white mb-4">How does it work?</h2>
+                    </div>
+
+                    <div class="col-lg-10 col-12 mx-auto">
+                        <div class="timeline-container">
+                            <ul class="vertical-scrollable-timeline" id="vertical-scrollable-timeline">
+                                <div class="list-progress">
+                                    <div class="inner"></div>
+                                </div>
+
+                                <li>
+                                    <h4 class="text-white mb-3">Choose the Right Level</h4>
+                                    <p class="text-white">Select the learning level that matches your current
+                                        Malayalam proficiency beginner to advanced.</p>
+                                    <div class="icon-holder">
+                                        <i class="bi bi-search"></i>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h4 class="text-white mb-3">Interactive Learning</h4>
+                                    <p class="text-white">Engage with fun, interactive Malayalam lessons designed
+                                        for learners of all ages.</p>
+                                    <div class="icon-holder">
+                                        <i class="bi bi-bookmark"></i>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h4 class="text-white mb-3">Practice & Progress</h4>
+                                    <p class="text-white">Improve your language skills while enjoying the beauty and
+                                        richness of Malayalam.</p>
+                                    <div class="icon-holder">
+                                        <i class="bi bi-book"></i>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-12 text-center mt-5">
+                        <p class="text-white">
+                            Want to learn more?
+                            <a href="#contact" class="btn custom-btn custom-border-btn ms-3">Join Our Classes</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="faq-section section-padding" id="faqs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <h2 class="mb-4">Frequently Asked Questions</h2>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="col-lg-5 col-12">
+                        <img src="images/faq_graphic.jpg" class="img-fluid" alt="FAQs">
+                    </div>
+
+                    <div class="col-lg-6 col-12 m-auto">
+                        <div class="accordion" id="accordionExample">
+                            <!-- FAQ 1 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        What is Hello Malayalam?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Hello Malayalam is a learning platform designed to help people of all ages
+                                        especially those outside Kerala build or regain their Malayalam language
+                                        skills. Whether you're a beginner or reconnecting with your roots, our
+                                        platform offers accessible and enjoyable learning for everyone.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 2 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        How do I choose the right level?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        If you're new to Malayalam, we recommend starting with Level 1. If you
+                                        already know the alphabet or basic words, you can begin at Level 2 or
+                                        beyond. You can also take our quick assessment to find the best starting
+                                        point for your learning journey.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 3 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Is this platform suitable for adults who don’t know Malayalam?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Absolutely! Hello Malayalam is designed for all ages whether you're an adult
+                                        starting fresh, a parent learning with your child, or someone looking to
+                                        reconnect with the language. Our intuitive, friendly approach works for
+                                        every learner.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section section-padding" id="contact" style="background-color: #f8f9fa;">
+            <div class="container">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-8 col-12 text-center">
+                        <h2 class="mb-3 fw-bold">Get in touch</h2>
+                        <p class="lead text-muted">We'd love to hear from you! Reach out for inquiries or to join
+                            our classes.</p>
+                    </div>
+                </div>
+
+                <div class="row g-4 justify-content-center">
+                    <!-- Google Map Card -->
+                    <div class="col-lg-5 col-md-12 mb-4 mb-lg-0">
+                        <div class="card h-100 border-0 shadow-sm overflow-hidden">
+
+                            <div class="card-body p-0">
+                                <iframe class="google-map w-100"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.982068480226!2d76.3438103147948!3d9.931876992900932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0873e6b7d5e0a5%3A0x6b7d5e0a5b0873e6!2sEdachira%2C%20Kochi%2C%20Kerala!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+                                    height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                    title="Hello Malayalam Location Map"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Info Cards -->
+                    <div class="col-lg-7 col-md-12">
+                        <div class="row g-4 h-100">
+                            <!-- Head Office Card -->
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h4 class="card-title fw-semibold text-black mb-4">
+                                            <i class="bi bi-building me-2"></i>Head Office
+                                        </h4>
+                                        <p class="mb-4">
+                                            Brown 17E, Skyline Ivy League,<br>
+                                            Edachira, Kakkanadu,<br>
+                                            Kochi, Kerala 682030
+                                        </p>
+                                        <hr>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-3 d-flex align-items-center">
+                                                <!-- Changed to align-items-center -->
+                                                <i class="bi bi-telephone text-primary me-2"></i>
+                                                <!-- Removed mt-1 -->
+                                                <div>
+                                                    <a href="tel:9495374294" class="text-decoration-none text-dark">+91
+                                                        94953 74294</a>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center">
+                                                <!-- Changed to align-items-center -->
+                                                <i class="bi bi-telephone text-primary me-2"></i>
+                                                <!-- Removed mt-1 -->
+                                                <div>
+                                                    <a href="tel:9447417093" class="text-decoration-none text-dark">+91
+                                                        94474 17093</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Join Classes Card -->
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h4 class="card-title fw-semibold text-black mb-4">
+                                            <i class="bi bi-people me-2"></i>Join Our Classes
+                                        </h4>
+                                        <p class="mb-4">
+                                            Welcome to our online learning platform! Please share your Bio-Data for
+                                            further assistance
+                                        </p>
+                                        <hr>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-3 d-flex align-items-center">
+                                                <!-- Changed to align-items-center -->
+                                                <i class="bi bi-envelope text-primary me-2"></i>
+                                                <!-- Removed mt-1 -->
+                                                <div>
+                                                    <a href="mailto:info@hellomalayalam.com"
+                                                        class="text-decoration-none text-black">
+                                                        info@hellomalayalam.com
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center">
+                                                <!-- Changed to align-items-center -->
+                                                <i class="bi bi-clock text-primary me-2"></i> <!-- Removed mt-2 -->
+                                                <span class="text-black">Mon-Sat: 7:00AM-10:00PM (IST)</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+    </main>
+    <footer class="py-5 bg-white border-top">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Brand Info -->
+                <div class="col-lg-4 col-md-6">
+                    <div>
+                        <h5 class="mb-3 fw-semibold text-dark">Hello Malayalam</h5>
+                        <p class="text-secondary mb-0">
+                            A Malayalam tuition platform for all ages helping children, parents, and adults learn to
+                            read, write, and speak with ease.
+                        </p>
+                    </div>
+                </div>
+
+<!-- Quick Links -->
+<div class="col-lg-2 col-md-6">
+    <h5 class="mb-3 fw-semibold text-dark">Quick Links</h5>
+    <ul class="list-unstyled">
+        <li class="mb-2"><a href="#home" class="text-secondary text-decoration-none">Home</a></li>
+        <li class="mb-2"><a href="#learning-levels" class="text-secondary text-decoration-none">Learning Levels</a></li>
+        <li class="mb-2"><a href="#how-it-works" class="text-secondary text-decoration-none">How it Works</a></li>
+        <li class="mb-2"><a href="#faqs" class="text-secondary text-decoration-none">FAQs</a></li>
+        <li><a href="#contact" class="text-secondary text-decoration-none">Contact</a></li>
+    </ul>
+</div>
+
+
+                <!-- Contact Info -->
+                <div class="col-lg-4 col-md-6 offset-lg-2">
+                    <h5 class="mb-3 fw-semibold text-dark">Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2 d-flex">
+                            <i class="bi bi-geo-alt text-secondary mt-1 me-2"></i>
+                            <span class="text-secondary">Edachira, Ernakulam, Kerala 682030</span>
+                        </li>
+                        <li class="mb-2 d-flex">
+                            <i class="bi bi-telephone text-secondary mt-1 me-2"></i>
+                            <a href="tel:+919495374294" class="text-secondary text-decoration-none">+91 94953 74294</a>
+                        </li>
+                        <li class="mb-2 d-flex">
+                            <i class="bi bi-envelope text-secondary mt-1 me-2"></i>
+                            <a href="mailto:info@hellomalayalam.com"
+                                class="text-secondary text-decoration-none">info@hellomalayalam.com</a>
+                        </li>
+                        <li class="d-flex">
+                            <i class="bi bi-clock text-secondary mt-1 me-2"></i>
+                            <span class="text-secondary">Mon–Sat: 7:00 AM – 10:00 PM IST</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="my-4">
+
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="text-secondary mb-0 small">&copy; 2025 Hello Malayalam. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="text-secondary mb-0 small">
+                        Designed with <i class="bi bi-heart-fill text-danger"></i> for Malayalam learners
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/click-scroll.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        // Initialize tab animations
+        document.addEventListener('DOMContentLoaded', function () {
+            const tabPanes = document.querySelectorAll('.tab-pane');
+
+            // Add slide animation to tabs
+            tabPanes.forEach(pane => {
+                pane.addEventListener('show.bs.tab', function () {
+                    this.classList.add('animate__slideInRight');
+                });
+
+                pane.addEventListener('hidden.bs.tab', function () {
+                    this.classList.remove('animate__slideInRight');
+                });
+            });
+
+            // Add hover effects to cards
+            const customBlocks = document.querySelectorAll('.custom-block');
+            customBlocks.forEach(block => {
+                block.addEventListener('mouseenter', function () {
+                    this.classList.add('animate__pulse');
+                });
+
+                block.addEventListener('mouseleave', function () {
+                    this.classList.remove('animate__pulse');
+                });
+            });
+        });
+    </script>
+
+    <script>
+    window.addEventListener('beforeunload', function () {
+        window.scrollTo(0, 0);
+    });
+</script>
+
+
+
+</body>
+
+</html>

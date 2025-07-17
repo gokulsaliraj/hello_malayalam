@@ -1,0 +1,1378 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Our Teacher – Hello Malayalam</title>
+
+    <!-- CSS FILES -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/templatemo-topic-listing.css" rel="stylesheet">
+</head>
+
+<body class="topics-listing-page" id="top">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <div class="d-flex flex-grow-1 justify-content-between align-items-center" style="text-shadow: 2px 2px 4px rgb(216, 214, 214); padding: 8px 0;">
+            <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
+                <img src="images/hello_malayalam.png" alt="Hello Malayalam Logo" style="height: 80px;" />
+            </a>
+            <button class="navbar-toggler order-lg-1" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#learning-levels">Learning Levels</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#how-it-works">How it works</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#faqs">FAQs</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <style>
+        /* Modern Header Styles */
+        .teacher-header {
+            position: relative;
+            padding: 140px 0 100px;
+            background: linear-gradient(135deg, #007bff, #00c6ff);
+            color: white;
+            text-align: center;
+            overflow: hidden;
+            clip-path: ellipse(120% 100% at 50% 0%);
+            z-index: 1;
+        }
+        
+        .header-shapes {
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+        }
+        
+        .header-shape {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.2;
+            animation: float 12s ease-in-out infinite;
+        }
+        
+        .shape-1 {
+            width: 300px;
+            height: 300px;
+            background: rgba(255,255,255,0.6);
+            top: -100px;
+            left: -150px;
+        }
+        
+        .shape-2 {
+            width: 250px;
+            height: 250px;
+            background: rgba(255,255,255,0.4);
+            bottom: -80px;
+            right: 10%;
+            animation-delay: 2s;
+        }
+        
+        .shape-3 {
+            width: 180px;
+            height: 180px;
+            background: rgba(255,255,255,0.3);
+            top: 40%;
+            left: 70%;
+            animation-delay: 4s;
+        }
+        
+        .header-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNwYXR0ZXJuKSIvPjwvc3ZnPg==');
+            opacity: 0.4;
+        }
+        
+        .header-intro {
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 10px 22px;
+            border-radius: 30px;
+            backdrop-filter: blur(8px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            animation: fadeIn 1s ease-out forwards;
+        }
+        
+        .header-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(90deg, #fff, #d6f2ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+            display: inline-block;
+            animation: slideUp 1s ease-out forwards 0.3s;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        
+        .header-title span {
+            position: relative;
+        }
+        
+        .header-title span::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: white;
+            border-radius: 4px;
+            animation: expand 0.8s ease-out forwards 1s;
+            transform-origin: left;
+            transform: scaleX(0);
+        }
+        
+        .header-subtitle {
+            font-size: 1.4rem;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+            line-height: 1.6;
+            animation: fadeIn 1s ease-out forwards 0.6s;
+            opacity: 0;
+        }
+        
+        .header-buttons {
+            margin-top: 2.5rem;
+            animation: fadeIn 1s ease-out forwards 0.9s;
+            opacity: 0;
+        }
+        
+        .btn-header {
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+        
+        .btn-primary {
+            background: white;
+            color: #007bff;
+        }
+        
+        .btn-outline-light {
+            border: 2px solid white;
+            background: transparent;
+            color: white;
+        }
+        
+        .btn-outline-light:hover {
+            background: white;
+            color: #007bff;
+        }
+        
+        /* Animations */
+        @keyframes float {
+            0%, 100% { transform: translateY(0) translateX(0); }
+            50% { transform: translateY(-20px) translateX(10px); }
+        }
+        
+        @keyframes fadeIn {
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes slideUp {
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes expand {
+            to { transform: scaleX(1); }
+        }
+        
+        /* Responsive */
+        @media (max-width: 992px) {
+            .header-title {
+                font-size: 3rem;
+            }
+            
+            .header-subtitle {
+                font-size: 1.2rem;
+                padding: 0 20px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .teacher-header {
+                padding: 100px 0 80px;
+                clip-path: ellipse(150% 100% at 50% 0%);
+            }
+            
+            .header-title {
+                font-size: 2.5rem;
+            }
+            
+            .header-intro {
+                font-size: 1rem;
+                padding: 8px 18px;
+            }
+            
+            .header-buttons .btn {
+                display: block;
+                width: 80%;
+                max-width: 250px;
+                margin: 10px auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Modern Header -->
+<section class="teacher-header">
+    <!-- Animated Background Shapes -->
+    <div class="header-shapes">
+        <div class="header-shape shape-1"></div>
+        <div class="header-shape shape-2"></div>
+        <div class="header-shape shape-3"></div>
+    </div>
+
+    <!-- Subtle Pattern Overlay -->
+    <div class="header-pattern"></div>
+
+    <div class="container position-relative">
+        <h1 class="header-title">Our Teacher</h1>
+        <!-- Removed subtitle paragraph -->
+    </div>
+</section>
+
+<style>
+/* HEADER BASE */
+.modern-header {
+    position: relative;
+    width: 100%;
+    padding: 8rem 1rem 6rem;
+    background: linear-gradient(135deg, #007bff, #00c6ff);
+    overflow: hidden;
+    text-align: center;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    z-index: 1;
+    color: #fff;
+}
+
+
+/* BACKGROUND SHAPES */
+.header-shapes {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+.shape {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(90px);
+    opacity: 0.25;
+    animation: float 10s ease-in-out infinite;
+}
+.shape1 { width: 300px; height: 300px; background: rgba(255,255,255,0.5); top: -80px; left: -120px; }
+.shape2 { width: 250px; height: 250px; background: rgba(255,255,255,0.4); bottom: -80px; right: 50px; }
+.shape3 { width: 180px; height: 180px; background: rgba(255,255,255,0.35); top: 50%; left: 60%; }
+
+@keyframes float {
+    0%, 100% { transform: translateY(0) translateX(0); }
+    50% { transform: translateY(-35px) translateX(20px); }
+}
+
+/* TEXT STYLES */
+.header-intro {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    opacity: 0.95;
+    margin-bottom: 1rem;
+    display: inline-block;
+    background: rgba(255,255,255,0.2);
+    padding: 8px 18px;
+    border-radius: 25px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Add space above the header title */
+.header-title {
+    font-size: 3.8rem;
+    font-weight: 900;
+    position: relative;
+    margin-bottom: 1.5rem;
+    margin-top: 3rem; /* <-- Added space above the title */
+    background: linear-gradient(90deg, #fff, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.underline {
+    display: block;
+    width: 90px;
+    height: 5px;
+    background: #fff;
+    margin: 1rem auto 0;
+    border-radius: 6px;
+    animation: expand 1.3s ease forwards 0.8s;
+}
+
+@keyframes expand { from { width: 0; } to { width: 90px; } }
+
+.header-subtitle {
+    font-size: 1.4rem;
+    max-width: 650px;
+    margin: 1.5rem auto 0;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+/* BUTTON ENHANCEMENT (Optional CTA Below Header) */
+.header-buttons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.header-buttons .btn {
+    padding: 14px 34px;
+    border-radius: 40px;
+    font-weight: 600;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+/* ANIMATIONS */
+.animate-fade-in { animation: fadeIn 1.2s ease forwards; }
+.animate-fade-in-delay { animation: fadeIn 1.2s ease forwards 0.8s; }
+.animate-slide-up { animation: slideUp 1.2s ease forwards 0.4s; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes slideUp { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .header-title { font-size: 2.4rem; }
+    .header-subtitle { font-size: 1.1rem; padding: 0 1rem; }
+}
+</style>
+<section class="modern-hero">
+  <!-- Background Animated Shapes -->
+  <div class="background-shapes">
+    <div class="shape shape1"></div>
+    <div class="shape shape2"></div>
+    <div class="shape shape3"></div>
+  </div>
+
+  <div class="container">
+    <div class="row align-items-center justify-content-between">
+      <!-- Left Content -->
+      <div class="col-lg-6 mb-5 hero-content text-center text-lg-start">
+        <span class="intro-text">Hello, I'm</span>
+        <h1 class="hero-title">Cini Vijayan</h1>
+        <h4 class="hero-subtitle">Malayalam Instructor · Author · Founder</h4>
+        <p class="lead">
+          Teaching Malayalam to learners worldwide with an engaging, cultural approach.
+          Founder of <strong>HelloMalayalam.com</strong> and author of
+          <em>Puranathile Pakshi Mrgadikal</em>.
+        </p>
+        <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+          <a href="#contact" class="btn btn-primary-glow">Contact Me</a>
+          <a href="./images/portfolio.pdf" class="btn btn-outline-glow"  download="Cini_Vijayan.pdf">My Portfolio</a>
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div class="col-lg-5 text-center position-relative hero-image-container">
+        <div class="image-wrapper">
+          <img src="images/teacher.png" alt="Cini Vijayan" class="profile-image" />
+
+          <!-- Floating Glass Cards -->
+          <div class="highlight-card top-left-card">
+            <div class="card-inner">
+              <img src="images/275918.png" alt="Star Icon" class="emoji-img">
+              <h5>20+ Years</h5>
+              <p>Teaching Experience</p>
+            </div>
+          </div>
+
+          <div class="highlight-card bottom-card">
+            <div class="card-inner">
+              <img src="images/1973807.png" alt="Book Icon" class="emoji-img">
+              <h5>Author of</h5>
+              <p>Puranathile Pakshi Mrgadikal</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+/* Global Font */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero Section */
+.modern-hero {
+  position: relative;
+  background: #fdfdfd;
+  padding: 6rem 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Background Shapes */
+.background-shapes {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.15;
+  animation: float 10s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(25px, -25px); }
+}
+
+/* Hero Text */
+.hero-content {
+  z-index: 2;
+  position: relative;
+}
+.intro-text {
+  font-size: 1.2rem;
+  color: #007bff;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-top: 0.5rem;
+  color: #000;
+}
+.hero-subtitle {
+  color: #444;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+.lead {
+  color: #666;
+  font-size: 1.1rem;
+  margin: 1.5rem 0;
+  line-height: 1.8;
+}
+
+/* Buttons */
+.btn-primary-glow {
+  background: #007bff;
+  color: #fff;
+  padding: 14px 34px;
+  font-weight: 600;
+  border: none;
+  border-radius: 40px;
+  box-shadow: 0 8px 25px rgba(0, 123, 255, 0.4);
+  transition: all 0.3s ease;
+}
+.btn-primary-glow:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 35px rgba(0, 123, 255, 0.6);
+}
+.btn-outline-glow {
+  border-radius: 40px;
+  padding: 14px 34px;
+  font-weight: 600;
+  border: 2px solid #007bff;
+  color: #007bff;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+.btn-outline-glow:hover {
+  background: #007bff;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
+}
+
+/* Image */
+.profile-image {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 30px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease;
+}
+.profile-image:hover {
+  transform: scale(1.03);
+}
+
+/* Glass Cards */
+.highlight-card {
+  position: absolute;
+  border-radius: 20px;
+  padding: 18px;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  animation: floatCard 6s ease-in-out infinite alternate;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.highlight-card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 15px 40px rgba(0, 123, 255, 0.3);
+}
+.card-inner { text-align: center; }
+.emoji-img {
+  width: 42px;
+  height: 42px;
+  display: block;
+  margin: 0 auto 10px;
+}
+.card-inner h5 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #000;
+}
+.card-inner p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Floating Animation */
+@keyframes floatCard {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
+
+/* Card Positions */
+.top-left-card { top: 20px; left: -100px; animation-delay: 0s; }
+.bottom-card { bottom: -20px; right: -20px; animation-delay: 2s; }
+
+/* Responsive */
+@media (max-width: 992px) {
+  .highlight-card {
+    animation: none !important;
+    transform: none !important;
+    position: static;
+    margin: 15px auto;
+    display: block;
+  }
+  .hero-title { font-size: 2.8rem; }
+}
+
+</style>
+
+<section class="education-section py-5">
+  <div class="container">
+    <!-- Heading -->
+    <div class="text-center mb-5">
+      <h2 class="section-title">Education <span>& Achievements</span></h2>
+      <p class="section-subtitle">
+        A strong academic foundation shaping an inspiring educator.
+      </p>
+    </div>
+
+    <!-- Equal Height Cards -->
+    <div class="row g-4 justify-content-center">
+      <!-- Card 1 -->
+      <div class="col-lg-4 col-md-6 d-flex">
+        <div class="edu-card flex-fill">
+          <div class="edu-icon"><i class="bi bi-mortarboard-fill"></i></div>
+          <h4>M.A. Malayalam Language & Literature</h4>
+          <p>University of Calicut (Distance Education)</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-lg-4 col-md-6 d-flex">
+        <div class="edu-card flex-fill">
+          <div class="edu-icon"><i class="bi bi-book-fill"></i></div>
+          <h4>B.Ed in Education</h4>
+          <p>University of Calicut</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-lg-4 col-md-6 d-flex">
+        <div class="edu-card flex-fill">
+          <div class="edu-icon"><i class="bi bi-award-fill"></i></div>
+          <h4>State Eligibility Test (SET)</h4>
+          <p>Government of Kerala</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+/* Section Styling */
+.education-section {
+  background: #ffffff;
+  border-radius: 18px;
+}
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.section-title span {
+  color: #007bff;
+}
+.section-subtitle {
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* Equal Height Cards */
+.edu-card {
+  background: #fff;
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%; /* Ensures equal height */
+}
+.edu-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.12);
+}
+
+/* Icon Styling */
+.edu-icon {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  margin: 0 auto 20px;
+  animation: floatIcon 4s ease-in-out infinite;
+}
+
+/* Card Text */
+.edu-card h4 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.edu-card p {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 0; /* Removed extra space */
+}
+
+/* Animations */
+@keyframes floatIcon {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section-title { font-size: 2rem; }
+}
+</style>
+
+<section class="experience-section py-5">
+  <div class="container">
+    <!-- Section Header -->
+    <div class="text-center mb-5">
+      <h2 class="section-title">Teaching <span>Experience</span></h2>
+      <p class="section-subtitle">Over two decades of guiding learners with passion and expertise.</p>
+    </div>
+
+    <!-- Experience Grid -->
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-lg-6 col-md-12">
+        <div class="exp-card">
+          <div class="exp-header">
+            <div class="exp-icon"><i class="bi bi-laptop"></i></div>
+          </div>
+          <div class="exp-body">
+            <h4>Freelance Malayalam Teacher</h4>
+            <p class="duration">2003 – Present</p>
+            <p class="location">Online & Offline</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-lg-6 col-md-12">
+        <div class="exp-card">
+          <div class="exp-header">
+            <div class="exp-icon"><i class="bi bi-person-badge"></i></div>
+
+          </div>
+          <div class="exp-body">
+            <h4>Higher Secondary Malayalam Teacher</h4>
+            <p class="duration">Jul 2016 – Feb 2017</p>
+            <p class="location">GHSS Tuvvur, Kerala</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-lg-6 col-md-12">
+        <div class="exp-card">
+          <div class="exp-header">
+            <div class="exp-icon"><i class="bi bi-book-half"></i></div>
+
+          </div>
+          <div class="exp-body">
+            <h4>Higher Secondary Malayalam Teacher</h4>
+            <p class="duration">Jun 2009 – Feb 2010</p>
+            <p class="location">GHSS Pandikkad, Kerala</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-lg-6 col-md-12">
+        <div class="exp-card">
+          <div class="exp-header">
+            <div class="exp-icon"><i class="bi bi-people-fill"></i></div>
+          </div>
+          <div class="exp-body">
+            <h4>Higher Secondary Malayalam Teacher</h4>
+            <p class="duration">Jul 2008 – Feb 2009</p>
+            <p class="location">GHSS Nellikkuth, Kerala</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+/* Section Background */
+.experience-section {
+  position: relative;
+  background: linear-gradient(135deg, #f3f8ff, #ffffff);
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+
+
+/* Heading */
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #222;
+}
+.section-title span {
+  color: #007bff;
+}
+.section-subtitle {
+  color: #555;
+  font-size: 1.15rem;
+  max-width: 680px;
+  margin: 10px auto 0;
+}
+
+/* Card Styling - Glassmorphism */
+.exp-card {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  min-height: 240px;
+}
+.exp-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 55px rgba(0, 0, 0, 0.15);
+}
+
+/* Header */
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.exp-icon {
+  width: 65px;
+  height: 65px;
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 198, 255, 0.3);
+  transition: transform 0.4s ease;
+}
+.exp-card:hover .exp-icon {
+  transform: rotate(8deg) scale(1.05);
+}
+
+/* Badge */
+.badge {
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  backdrop-filter: blur(6px);
+}
+.remote {
+  background: rgba(0, 198, 255, 0.25);
+  color: #007bff;
+}
+.onsite {
+  background: rgba(0, 123, 255, 0.25);
+  color: #0056b3;
+}
+
+/* Body */
+.exp-body h4 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #222;
+}
+.duration {
+  color: #007bff;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+.location {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 12px;
+}
+.description {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .exp-card { text-align: center; }
+  .exp-header { flex-direction: column; gap: 12px; }
+}
+</style>
+
+<section class="skills-modern py-5">
+  <div class="container">
+    <!-- Heading -->
+    <div class="text-center mb-5">
+      <h2 class="section-title">Skills & <span>Expertise</span></h2>
+      <p class="section-subtitle">Core strengths that make learning engaging and effective.</p>
+    </div>
+
+    <!-- Skills Circle Cards -->
+    <div class="row g-4 justify-content-center">
+      
+      <!-- Languages -->
+      <div class="col-md-6 col-lg-3">
+        <div class="circle-card">
+          <div class="circle-icon gradient-blue">
+            <i class="bi bi-translate"></i>
+          </div>
+          <h4>Languages</h4>
+          <p>Malayalam, English</p>
+        </div>
+      </div>
+
+      <!-- Expertise -->
+      <div class="col-md-6 col-lg-3">
+        <div class="circle-card">
+          <div class="circle-icon gradient-green">
+            <i class="bi bi-book"></i>
+          </div>
+          <h4>Expertise</h4>
+          <p>Instruction, Literature, Grammar</p>
+        </div>
+      </div>
+
+      <!-- Methods -->
+      <div class="col-md-6 col-lg-3">
+        <div class="circle-card">
+          <div class="circle-icon gradient-orange">
+            <i class="bi bi-lightbulb"></i>
+          </div>
+          <h4>Methods</h4>
+          <p>Storytelling, Games, Cultural Immersion</p>
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <div class="col-md-6 col-lg-3">
+        <div class="circle-card">
+          <div class="circle-icon gradient-purple">
+            <i class="bi bi-laptop"></i>
+          </div>
+          <h4>Tools</h4>
+          <p>Google Meet, Zoom, Whiteboards</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+/* Section */
+.skills-modern {
+  background: #f9fafc;
+  padding: 60px 20px;
+}
+.section-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.section-title span {
+  color: #007bff;
+}
+.section-subtitle {
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  font-size: 1rem;
+}
+
+/* Circle Card */
+.circle-card {
+  background: #fff;
+  border-radius: 50%;
+  width: 220px;
+  height: 220px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+}
+.circle-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+/* Circle Icon with Gradient */
+.circle-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.circle-card:hover .circle-icon {
+  transform: scale(1.1) rotate(10deg);
+}
+
+/* Gradient Colors */
+.gradient-blue {
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+}
+.gradient-green {
+  background: linear-gradient(135deg, #28a745, #20c997);
+}
+.gradient-orange {
+  background: linear-gradient(135deg, #fd7e14, #ffc107);
+}
+.gradient-purple {
+  background: linear-gradient(135deg, #6f42c1, #d63384);
+}
+
+/* Text */
+.circle-card h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.circle-card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .circle-card {
+    width: 180px;
+    height: 180px;
+  }
+  .circle-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.4rem;
+  }
+}
+</style>
+
+<section class="services-section py-5">
+  <div class="container">
+    <!-- Heading -->
+    <div class="text-center mb-5">
+      <h2 class="section-title">Services <span>Offered</span></h2>
+      <p class="section-subtitle">Comprehensive learning experiences tailored for all age groups.</p>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="row g-4 justify-content-center">
+      <!-- Service 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card">
+          <div class="service-icon"><i class="bi bi-emoji-smile"></i></div>
+          <h4>Malayalam Courses</h4>
+          <p>For Kids, Adults, and Heritage Learners with flexible options.</p>
+        </div>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card">
+          <div class="service-icon"><i class="bi bi-pencil-square"></i></div>
+          <h4>Language Skills</h4>
+          <p>Reading, Writing, and Spoken Malayalam lessons for all levels.</p>
+        </div>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card">
+          <div class="service-icon"><i class="bi bi-flower1"></i></div>
+          <h4>Cultural Learning</h4>
+          <p>Kerala traditions, festivals, and cultural activities integrated into classes.</p>
+        </div>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card">
+          <div class="service-icon"><i class="bi bi-journal-bookmark"></i></div>
+          <h4>Academic Support</h4>
+          <p>Guidance for CBSE, ICSE, and Kerala syllabus students in Malayalam.</p>
+        </div>
+      </div>
+
+      <!-- Service 5 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card">
+          <div class="service-icon"><i class="bi bi-people"></i></div>
+          <h4>Customized Classes</h4>
+          <p>One-on-One and Group Classes available Online & In-Person.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+/* Section Styling */
+.services-section {
+  background: #f9fafc;
+  padding: 80px 20px;
+}
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.section-title span {
+  color: #007bff;
+}
+.section-subtitle {
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  font-size: 1.1rem;
+}
+
+/* Service Cards */
+.service-card {
+  background: #fff;
+  padding: 24px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+.service-icon {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  color: #fff;
+  margin: 0 auto 18px;
+}
+.service-card h4 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.service-card p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .service-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.4rem;
+  }
+  .service-card h4 {
+    font-size: 1.2rem;
+  }
+}
+</style>
+
+
+<section class="portfolio-location">
+  <div class="container text-center">
+    <!-- Heading -->
+    <div class="mb-5">
+      <h2 class="section-title">Our <span>Location</span></h2>
+    </div>
+
+    <!-- Address Card -->
+    <div class="location-card">
+      <!-- Icon -->
+      <div class="location-icon">
+        <i class="bi bi-geo-alt-fill"></i>
+      </div>
+      <p class="location-text">
+        Brown 17E, Skyline Ivy League,<br>
+        Ernakulam, Kerala, India
+      </p>
+      <a href="https://goo.gl/maps/YOURMAPLINK" target="_blank" class="btn btn-outline-glow">
+        Get Directions
+      </a>
+    </div>
+  </div>
+
+  <!-- Half Circle Background -->
+  <div class="half-circle"></div>
+</section>
+
+<style>
+/* Section Styling */
+.portfolio-location {
+  position: relative;
+  padding: 80px 20px 180px;
+  background: #f9fafc;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Half Circle */
+.half-circle {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(180deg);
+  width: 180%;
+  height: 280px;
+  background: #007bff;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  z-index: 0;
+}
+
+/* Headings */
+.portfolio-subtitle {
+  font-size: 1.1rem;
+  color: #007bff;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.portfolio-title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+/* Card */
+.location-card {
+  position: relative;
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px 25px;
+  max-width: 450px;
+  margin: 0 auto;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.location-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
+}
+
+/* Icon */
+.location-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 2rem;
+  margin: 0 auto 20px;
+  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+}
+
+/* Text */
+.location-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #007bff;
+  margin-bottom: 8px;
+}
+.location-text {
+  font-size: 1.05rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Button */
+.btn-outline-glow {
+  display: inline-block;
+  padding: 12px 30px;
+  font-weight: 600;
+  border: 2px solid #007bff;
+  color: #007bff;
+  background: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.btn-outline-glow:hover {
+  background: #007bff;
+  color: #fff;
+  box-shadow: 0 8px 25px rgba(0, 123, 255, 0.4);
+}
+</style>
+
+
+<!-- Footer -->
+<footer class="py-5 bg-white border-top">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <h5 class="mb-3 fw-semibold text-dark">Hello Malayalam</h5>
+                <p class="text-secondary mb-0">A Malayalam tuition platform for all ages helping children, parents, and adults learn to read, write, and speak with ease.</p>
+            </div>
+
+            <div class="col-lg-2 col-md-6">
+                <h5 class="mb-3 fw-semibold text-dark">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="index.html" class="text-secondary text-decoration-none">Home</a></li>
+                    <li class="mb-2"><a href="index.html#learning-levels" class="text-secondary text-decoration-none">Learning Levels</a></li>
+                    <li class="mb-2"><a href="index.html#how-it-works" class="text-secondary text-decoration-none">How it Works</a></li>
+                    <li class="mb-2"><a href="index.html#faqs" class="text-secondary text-decoration-none">FAQs</a></li>
+                    <li><a href="index.html#contact" class="text-secondary text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6 offset-lg-2">
+                <h5 class="mb-3 fw-semibold text-dark">Contact Us</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2 d-flex"><i class="bi bi-geo-alt text-secondary mt-1 me-2"></i><span class="text-secondary">Edachira, Ernakulam, Kerala 682030</span></li>
+                    <li class="mb-2 d-flex"><i class="bi bi-telephone text-secondary mt-1 me-2"></i><a href="tel:+919495374294" class="text-secondary text-decoration-none">+91 94953 74294</a></li>
+                    <li class="mb-2 d-flex"><i class="bi bi-envelope text-secondary mt-1 me-2"></i><a href="mailto:info@hellomalayalam.com" class="text-secondary text-decoration-none">info@hellomalayalam.com</a></li>
+                    <li class="d-flex"><i class="bi bi-clock text-secondary mt-1 me-2"></i><span class="text-secondary">Mon–Sat: 7:00 AM – 10:00 PM IST</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="my-4">
+
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                <p class="text-secondary mb-0 small">&copy; 2025 Hello Malayalam. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <p class="text-secondary mb-0 small">Designed with <i class="bi bi-heart-fill text-danger"></i> for Malayalam learners</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- JS FILES -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery.sticky.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>
