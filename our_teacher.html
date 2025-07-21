@@ -15,12 +15,16 @@
 <body class="topics-listing-page" id="top">
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg custom-navbar">
     <div class="container">
-        <div class="d-flex flex-grow-1 justify-content-between align-items-center" style="text-shadow: 2px 2px 4px rgb(216, 214, 214); padding: 8px 0;">
+        <div class="d-flex flex-grow-1 justify-content-between align-items-center" style="padding: 8px 0;">
+            <!-- Logo -->
             <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
                 <img src="images/hello_malayalam.png" alt="Hello Malayalam Logo" style="height: 80px;" />
             </a>
+
+            <!-- Toggle for Mobile -->
             <button class="navbar-toggler order-lg-1" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -28,6 +32,7 @@
             </button>
         </div>
 
+        <!-- Menu -->
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -39,6 +44,36 @@
         </div>
     </div>
 </nav>
+
+<!-- CSS -->
+<style>
+.custom-navbar {
+    background-color: #80d0c7; /* White background */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Subtle shadow for depth */
+    padding: 10px 0;
+    position: sticky; /* Stays on top */
+    top: 0;
+    z-index: 999;
+}
+
+.custom-navbar .nav-link {
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #007bff; /* Highlight color on hover */
+}
+
+.navbar-toggler {
+    border: none;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280,0,0,0.6%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+</style>
+
 
     <style>
         /* Modern Header Styles */
@@ -399,7 +434,8 @@
           <em>Puranathile Pakshi Mrgadikal</em>.
         </p>
         <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
-          <a href="#contact" class="btn btn-primary-glow">Contact Me</a>
+<a href="#portfolio-location" class="btn btn-primary-glow">Contact Me</a>
+
           <a href="./images/portfolio.pdf" class="btn btn-outline-glow"  download="Cini_Vijayan.pdf">My Portfolio</a>
         </div>
       </div>
@@ -727,6 +763,7 @@ body {
 
     <!-- Experience Grid -->
     <div class="row g-4">
+      
       <!-- Card 1 -->
       <div class="col-lg-6 col-md-12">
         <div class="exp-card">
@@ -746,7 +783,6 @@ body {
         <div class="exp-card">
           <div class="exp-header">
             <div class="exp-icon"><i class="bi bi-person-badge"></i></div>
-
           </div>
           <div class="exp-body">
             <h4>Higher Secondary Malayalam Teacher</h4>
@@ -761,7 +797,6 @@ body {
         <div class="exp-card">
           <div class="exp-header">
             <div class="exp-icon"><i class="bi bi-book-half"></i></div>
-
           </div>
           <div class="exp-body">
             <h4>Higher Secondary Malayalam Teacher</h4>
@@ -784,6 +819,7 @@ body {
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
@@ -796,8 +832,6 @@ body {
   padding: 80px 0;
   overflow: hidden;
 }
-
-
 
 /* Heading */
 .section-title {
@@ -859,52 +893,46 @@ body {
   transform: rotate(8deg) scale(1.05);
 }
 
-/* Badge */
-.badge {
-  padding: 8px 14px;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  letter-spacing: 0.3px;
-  backdrop-filter: blur(6px);
-}
-.remote {
-  background: rgba(0, 198, 255, 0.25);
-  color: #007bff;
-}
-.onsite {
-  background: rgba(0, 123, 255, 0.25);
-  color: #0056b3;
-}
-
 /* Body */
 .exp-body h4 {
   font-size: 1.3rem;
   font-weight: 700;
   color: #222;
+  margin-bottom: 10px;
 }
 .duration {
   color: #007bff;
   font-size: 0.95rem;
   font-weight: 600;
+  margin-bottom: 5px;
 }
 .location {
   font-size: 0.95rem;
   color: #666;
   margin-bottom: 12px;
 }
-.description {
-  font-size: 0.95rem;
-  color: #555;
-  line-height: 1.6;
-}
 
 /* Responsive */
 @media (max-width: 768px) {
-  .exp-card { text-align: center; }
-  .exp-header { flex-direction: column; gap: 12px; }
+  .exp-card {
+    text-align: center;
+  }
+  .exp-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .duration, .location {
+    font-size: 1.1rem; /* Increased for better readability */
+  }
+  .exp-body h4 {
+    font-size: 1.4rem; /* Slightly bigger title */
+    margin-bottom: 8px;
+  }
 }
 </style>
+
+
+
 
 <section class="skills-modern py-5">
   <div class="container">
@@ -916,9 +944,9 @@ body {
 
     <!-- Skills Circle Cards -->
     <div class="row g-4 justify-content-center">
-      
+
       <!-- Languages -->
-      <div class="col-md-6 col-lg-3">
+      <div class="col-12 col-md-4 col-lg-3">
         <div class="circle-card">
           <div class="circle-icon gradient-blue">
             <i class="bi bi-translate"></i>
@@ -929,7 +957,7 @@ body {
       </div>
 
       <!-- Expertise -->
-      <div class="col-md-6 col-lg-3">
+      <div class="col-12 col-md-4 col-lg-3">
         <div class="circle-card">
           <div class="circle-icon gradient-green">
             <i class="bi bi-book"></i>
@@ -940,18 +968,18 @@ body {
       </div>
 
       <!-- Methods -->
-      <div class="col-md-6 col-lg-3">
+      <div class="col-12 col-md-4 col-lg-3">
         <div class="circle-card">
           <div class="circle-icon gradient-orange">
             <i class="bi bi-lightbulb"></i>
           </div>
           <h4>Methods</h4>
-          <p>Storytelling, Games, Cultural Immersion</p>
+          <p>Storytelling, Games & Culture</p>
         </div>
       </div>
 
       <!-- Tools -->
-      <div class="col-md-6 col-lg-3">
+      <div class="col-12 col-md-4 col-lg-3">
         <div class="circle-card">
           <div class="circle-icon gradient-purple">
             <i class="bi bi-laptop"></i>
@@ -991,7 +1019,7 @@ body {
   background: #fff;
   border-radius: 50%;
   width: 220px;
-  height: 220px;
+  aspect-ratio: 1 / 1; /* Keeps perfect circle */
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -1001,13 +1029,14 @@ body {
   padding: 15px;
   border: 1px solid #e5e7eb;
   transition: all 0.3s ease;
+  overflow: hidden;
 }
 .circle-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 30px rgba(0,0,0,0.08);
 }
 
-/* Circle Icon with Gradient */
+/* Circle Icon */
 .circle-icon {
   width: 70px;
   height: 70px;
@@ -1026,18 +1055,10 @@ body {
 }
 
 /* Gradient Colors */
-.gradient-blue {
-  background: linear-gradient(135deg, #007bff, #00c6ff);
-}
-.gradient-green {
-  background: linear-gradient(135deg, #28a745, #20c997);
-}
-.gradient-orange {
-  background: linear-gradient(135deg, #fd7e14, #ffc107);
-}
-.gradient-purple {
-  background: linear-gradient(135deg, #6f42c1, #d63384);
-}
+.gradient-blue { background: linear-gradient(135deg, #007bff, #00c6ff); }
+.gradient-green { background: linear-gradient(135deg, #28a745, #20c997); }
+.gradient-orange { background: linear-gradient(135deg, #fd7e14, #ffc107); }
+.gradient-purple { background: linear-gradient(135deg, #6f42c1, #d63384); }
 
 /* Text */
 .circle-card h4 {
@@ -1048,152 +1069,48 @@ body {
 .circle-card p {
   font-size: 0.9rem;
   color: #555;
+  margin: 0;
 }
 
-/* Responsive */
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .circle-card {
+    width: 200px; /* Larger than before */
+    padding: 12px;
+  }
+}
 @media (max-width: 768px) {
   .circle-card {
-    width: 180px;
-    height: 180px;
+    width: 180px; /* Bigger size for tablets */
+    padding: 10px;
+  }
+  .circle-icon {
+    width: 65px;
+    height: 65px;
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 576px) {
+  .circle-card {
+    width: 160px; /* Larger than previous mobile size */
+    padding: 8px;
   }
   .circle-icon {
     width: 60px;
     height: 60px;
     font-size: 1.4rem;
   }
-}
-</style>
-
-<section class="services-section py-5">
-  <div class="container">
-    <!-- Heading -->
-    <div class="text-center mb-5">
-      <h2 class="section-title">Services <span>Offered</span></h2>
-      <p class="section-subtitle">Comprehensive learning experiences tailored for all age groups.</p>
-    </div>
-
-    <!-- Services Grid -->
-    <div class="row g-4 justify-content-center">
-      <!-- Service 1 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="service-card">
-          <div class="service-icon"><i class="bi bi-emoji-smile"></i></div>
-          <h4>Malayalam Courses</h4>
-          <p>For Kids, Adults, and Heritage Learners with flexible options.</p>
-        </div>
-      </div>
-
-      <!-- Service 2 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="service-card">
-          <div class="service-icon"><i class="bi bi-pencil-square"></i></div>
-          <h4>Language Skills</h4>
-          <p>Reading, Writing, and Spoken Malayalam lessons for all levels.</p>
-        </div>
-      </div>
-
-      <!-- Service 3 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="service-card">
-          <div class="service-icon"><i class="bi bi-flower1"></i></div>
-          <h4>Cultural Learning</h4>
-          <p>Kerala traditions, festivals, and cultural activities integrated into classes.</p>
-        </div>
-      </div>
-
-      <!-- Service 4 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="service-card">
-          <div class="service-icon"><i class="bi bi-journal-bookmark"></i></div>
-          <h4>Academic Support</h4>
-          <p>Guidance for CBSE, ICSE, and Kerala syllabus students in Malayalam.</p>
-        </div>
-      </div>
-
-      <!-- Service 5 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="service-card">
-          <div class="service-icon"><i class="bi bi-people"></i></div>
-          <h4>Customized Classes</h4>
-          <p>One-on-One and Group Classes available Online & In-Person.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<style>
-/* Section Styling */
-.services-section {
-  background: #f9fafc;
-  padding: 80px 20px;
-}
-.section-title {
-  font-size: 2.5rem;
-  font-weight: 800;
-}
-.section-title span {
-  color: #007bff;
-}
-.section-subtitle {
-  color: #555;
-  max-width: 600px;
-  margin: 0 auto 30px;
-  font-size: 1.1rem;
-}
-
-/* Service Cards */
-.service-card {
-  background: #fff;
-  padding: 24px;
-  border-radius: 16px;
-  text-align: center;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
-  transition: all 0.3s ease;
-  height: 100%;
-}
-.service-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
-}
-.service-icon {
-  width: 70px;
-  height: 70px;
-  background: linear-gradient(135deg, #007bff, #00c6ff);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.8rem;
-  color: #fff;
-  margin: 0 auto 18px;
-}
-.service-card h4 {
-  font-size: 1.3rem;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-.service-card p {
-  color: #666;
-  font-size: 0.95rem;
-  line-height: 1.6;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .service-icon {
-    width: 60px;
-    height: 60px;
-    font-size: 1.4rem;
+  .circle-card h4 {
+    font-size: 1rem;
   }
-  .service-card h4 {
-    font-size: 1.2rem;
+  .circle-card p {
+    font-size: 0.85rem;
   }
 }
 </style>
 
 
-<section class="portfolio-location">
+<section class="portfolio-location" id="portfolio-location">
   <div class="container text-center">
     <!-- Heading -->
     <div class="mb-5">
@@ -1210,7 +1127,7 @@ body {
         Brown 17E, Skyline Ivy League,<br>
         Ernakulam, Kerala, India
       </p>
-      <a href="https://goo.gl/maps/YOURMAPLINK" target="_blank" class="btn btn-outline-glow">
+      <a href="https://maps.app.goo.gl/wZQWQSqeFcF8KbBSA" target="_blank" class="btn btn-outline-glow">
         Get Directions
       </a>
     </div>
@@ -1321,6 +1238,10 @@ body {
   color: #fff;
   box-shadow: 0 8px 25px rgba(0, 123, 255, 0.4);
 }
+#portfolio-location {
+  scroll-margin-top: 100px; /* Adjust based on your navbar height */
+}
+
 </style>
 
 
