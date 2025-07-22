@@ -10,8 +10,15 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-icons.css" rel="stylesheet">
     <link href="css/templatemo-topic-listing.css" rel="stylesheet">
+    
 </head>
-
+<style>
+    body {
+        font-family: Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+</style>
 <body class="topics-listing-page" id="top">
 
 <!-- Navbar -->
@@ -47,6 +54,7 @@
 
 <!-- CSS -->
 <style>
+  
 .custom-navbar {
     background-color: #80d0c7; /* White background */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Subtle shadow for depth */
@@ -413,7 +421,7 @@
     .header-subtitle { font-size: 1.1rem; padding: 0 1rem; }
 }
 </style>
-<section class="modern-hero" style="font-family: Verdana, sans-serif;">
+<section class="modern-hero">
   <!-- Background Animated Shapes -->
   <div class="background-shapes">
     <div class="shape shape1"></div>
@@ -430,8 +438,8 @@
         <h4 class="hero-subtitle">Malayalam Instructor · Author · Founder</h4>
         <p class="lead">
           Teaching Malayalam to learners worldwide with an engaging, cultural approach.
-          Founder of <strong>HelloMalayalam.com</strong> and author of
-          <em>Puranathile Pakshi Mrgadikal</em>.
+          Founder of HelloMalayalam.comand author of
+          Puranathile Pakshi Mrgadikal.
         </p>
         <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
           <a href="#portfolio-location" class="btn btn-primary-glow">Contact Me</a>
@@ -469,12 +477,7 @@
 
 <style>
 /* Global Font */
-body {
-  font-family: 'Poppins', sans-serif;
-  color: #333;
-  margin: 0;
-  padding: 0;
-}
+
 
 /* Hero Section */
 .modern-hero {
@@ -933,7 +936,6 @@ body {
 
 
 
-
 <section class="skills-modern py-5">
   <div class="container">
     <!-- Heading -->
@@ -942,13 +944,13 @@ body {
       <p class="section-subtitle">Core strengths that make learning engaging and effective.</p>
     </div>
 
-    <!-- Skills Circle Cards -->
+    <!-- Skills Square Cards -->
     <div class="row g-4 justify-content-center">
 
       <!-- Languages -->
       <div class="col-12 col-md-4 col-lg-3">
-        <div class="circle-card">
-          <div class="circle-icon gradient-blue">
+        <div class="square-card">
+          <div class="square-icon gradient-blue">
             <i class="bi bi-translate"></i>
           </div>
           <h4>Languages</h4>
@@ -958,19 +960,19 @@ body {
 
       <!-- Expertise -->
       <div class="col-12 col-md-4 col-lg-3">
-        <div class="circle-card">
-          <div class="circle-icon gradient-green">
+        <div class="square-card">
+          <div class="square-icon gradient-green">
             <i class="bi bi-book"></i>
           </div>
           <h4>Expertise</h4>
-          <p>Instruction, Literature, Grammar</p>
+          <p>Literature, Grammar</p>
         </div>
       </div>
 
       <!-- Methods -->
       <div class="col-12 col-md-4 col-lg-3">
-        <div class="circle-card">
-          <div class="circle-icon gradient-orange">
+        <div class="square-card">
+          <div class="square-icon gradient-orange">
             <i class="bi bi-lightbulb"></i>
           </div>
           <h4>Methods</h4>
@@ -980,8 +982,8 @@ body {
 
       <!-- Tools -->
       <div class="col-12 col-md-4 col-lg-3">
-        <div class="circle-card">
-          <div class="circle-icon gradient-purple">
+        <div class="square-card">
+          <div class="square-icon gradient-purple">
             <i class="bi bi-laptop"></i>
           </div>
           <h4>Tools</h4>
@@ -1014,33 +1016,33 @@ body {
   font-size: 1rem;
 }
 
-/* Circle Card */
-.circle-card {
+/* Square Card */
+.square-card {
   background: #fff;
-  border-radius: 50%;
+  border-radius: 20px;
   width: 220px;
-  aspect-ratio: 1 / 1; /* Keeps perfect circle */
+  height: 220px; /* Perfect square */
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 15px;
+  padding: 20px;
   border: 1px solid #e5e7eb;
   transition: all 0.3s ease;
-  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
-.circle-card:hover {
+.square-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
 }
 
-/* Circle Icon */
-.circle-icon {
+/* Icon */
+.square-icon {
   width: 70px;
   height: 70px;
-  border-radius: 50%;
+  border-radius: 16px; /* Slightly rounded */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1050,8 +1052,8 @@ body {
   box-shadow: 0 6px 15px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
 }
-.circle-card:hover .circle-icon {
-  transform: scale(1.1) rotate(10deg);
+.square-card:hover .square-icon {
+  transform: scale(1.1) rotate(5deg);
 }
 
 /* Gradient Colors */
@@ -1061,12 +1063,12 @@ body {
 .gradient-purple { background: linear-gradient(135deg, #6f42c1, #d63384); }
 
 /* Text */
-.circle-card h4 {
+.square-card h4 {
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 6px;
 }
-.circle-card p {
+.square-card p {
   font-size: 0.9rem;
   color: #555;
   margin: 0;
@@ -1074,36 +1076,39 @@ body {
 
 /* Responsive Adjustments */
 @media (max-width: 992px) {
-  .circle-card {
-    width: 200px; /* Larger than before */
-    padding: 12px;
+  .square-card {
+    width: 200px;
+    height: 200px;
+    padding: 15px;
   }
 }
 @media (max-width: 768px) {
-  .circle-card {
-    width: 180px; /* Bigger size for tablets */
-    padding: 10px;
+  .square-card {
+    width: 180px;
+    height: 180px;
+    padding: 12px;
   }
-  .circle-icon {
+  .square-icon {
     width: 65px;
     height: 65px;
     font-size: 1.6rem;
   }
 }
 @media (max-width: 576px) {
-  .circle-card {
-    width: 160px; /* Larger than previous mobile size */
-    padding: 8px;
+  .square-card {
+    width: 160px;
+    height: 160px;
+    padding: 10px;
   }
-  .circle-icon {
+  .square-icon {
     width: 60px;
     height: 60px;
     font-size: 1.4rem;
   }
-  .circle-card h4 {
+  .square-card h4 {
     font-size: 1rem;
   }
-  .circle-card p {
+  .square-card p {
     font-size: 0.85rem;
   }
 }
