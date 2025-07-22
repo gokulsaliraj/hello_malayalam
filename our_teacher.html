@@ -639,7 +639,7 @@
   <div class="container">
     <!-- Heading -->
     <div class="text-center mb-5">
-      <h2 class="section-title">Education <span>& Achievements</span></h2>
+      <h2 class="section-title">Education & <span>Achievements</span></h2>
       <p class="section-subtitle">
         A strong academic foundation shaping an inspiring educator.
       </p>
@@ -934,8 +934,7 @@
 }
 </style>
 
-
-
+<!-- ✅ Skills & Expertise Section -->
 <section class="skills-modern py-5">
   <div class="container">
     <!-- Heading -->
@@ -944,116 +943,111 @@
       <p class="section-subtitle">Core strengths that make learning engaging and effective.</p>
     </div>
 
-    <!-- Skills Square Cards -->
-    <div class="row g-4 justify-content-center">
-
+    <!-- Skills Grid -->
+    <div class="skills-grid">
+      
       <!-- Languages -->
-      <div class="col-12 col-md-4 col-lg-3">
-        <div class="square-card">
-          <div class="square-icon gradient-blue">
-            <i class="bi bi-translate"></i>
-          </div>
-          <h4>Languages</h4>
-          <p>Malayalam, English</p>
+      <div class="skill-card">
+        <div class="icon-wrapper gradient-blue">
+          <i class="bi bi-translate"></i>
         </div>
+        <h4>Languages</h4>
+        <p>Malayalam, English</p>
       </div>
 
       <!-- Expertise -->
-      <div class="col-12 col-md-4 col-lg-3">
-        <div class="square-card">
-          <div class="square-icon gradient-green">
-            <i class="bi bi-book"></i>
-          </div>
-          <h4>Expertise</h4>
-          <p>Literature, Grammar</p>
+      <div class="skill-card">
+        <div class="icon-wrapper gradient-green">
+          <i class="bi bi-book"></i>
         </div>
+        <h4>Expertise</h4>
+        <p>Literature, Grammar</p>
       </div>
 
       <!-- Methods -->
-      <div class="col-12 col-md-4 col-lg-3">
-        <div class="square-card">
-          <div class="square-icon gradient-orange">
-            <i class="bi bi-lightbulb"></i>
-          </div>
-          <h4>Methods</h4>
-          <p>Storytelling, Games & Culture</p>
+      <div class="skill-card">
+        <div class="icon-wrapper gradient-orange">
+          <i class="bi bi-lightbulb"></i>
         </div>
+        <h4>Methods</h4>
+        <p>Storytelling, Games & Culture</p>
       </div>
 
       <!-- Tools -->
-      <div class="col-12 col-md-4 col-lg-3">
-        <div class="square-card">
-          <div class="square-icon gradient-purple">
-            <i class="bi bi-laptop"></i>
-          </div>
-          <h4>Tools</h4>
-          <p>Google Meet, Zoom, Whiteboards</p>
+      <div class="skill-card">
+        <div class="icon-wrapper gradient-purple">
+          <i class="bi bi-laptop"></i>
         </div>
+        <h4>Tools</h4>
+        <p>Google Meet, Zoom, Whiteboards</p>
       </div>
 
     </div>
   </div>
 </section>
 
+<!-- ✅ CSS -->
 <style>
-/* Section */
+/* Section Base */
 .skills-modern {
-  background: #f9fafc;
-  padding: 60px 20px;
+  background: #f7f8fa;
+  padding: 80px 20px;
+  font-family: 'Open Sans', sans-serif;
 }
 .section-title {
-  font-size: 2.3rem;
+  font-size: 2.6rem;
   font-weight: 700;
-  margin-bottom: 10px;
 }
 .section-title span {
   color: #007bff;
 }
 .section-subtitle {
   color: #666;
-  max-width: 600px;
-  margin: 0 auto 30px;
-  font-size: 1rem;
+  max-width: 650px;
+  margin: 10px auto 50px;
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
-/* Square Card */
-.square-card {
+/* Modern Grid Layout */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns for desktop */
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Skill Card */
+.skill-card {
   background: #fff;
   border-radius: 20px;
-  width: 220px;
-  height: 220px; /* Perfect square */
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 30px 20px;
   text-align: center;
-  padding: 20px;
-  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
   transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  cursor: pointer;
 }
-.square-card:hover {
+.skill-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.1);
 }
 
 /* Icon */
-.square-icon {
-  width: 70px;
-  height: 70px;
-  border-radius: 16px; /* Slightly rounded */
+.icon-wrapper {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  border-radius: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 2rem;
   color: #fff;
-  font-size: 1.8rem;
-  margin-bottom: 12px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
 }
-.square-card:hover .square-icon {
-  transform: scale(1.1) rotate(5deg);
+.skill-card:hover .icon-wrapper {
+  transform: scale(1.1) rotate(8deg);
 }
 
 /* Gradient Colors */
@@ -1062,57 +1056,33 @@
 .gradient-orange { background: linear-gradient(135deg, #fd7e14, #ffc107); }
 .gradient-purple { background: linear-gradient(135deg, #6f42c1, #d63384); }
 
-/* Text */
-.square-card h4 {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-bottom: 6px;
+/* Card Text */
+.skill-card h4 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
-.square-card p {
-  font-size: 0.9rem;
+.skill-card p {
+  font-size: 1rem;
   color: #555;
-  margin: 0;
 }
 
-/* Responsive Adjustments */
+/* Responsive */
 @media (max-width: 992px) {
-  .square-card {
-    width: 200px;
-    height: 200px;
-    padding: 15px;
-  }
-}
-@media (max-width: 768px) {
-  .square-card {
-    width: 180px;
-    height: 180px;
-    padding: 12px;
-  }
-  .square-icon {
-    width: 65px;
-    height: 65px;
-    font-size: 1.6rem;
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row on tablet */
   }
 }
 @media (max-width: 576px) {
-  .square-card {
-    width: 160px;
-    height: 160px;
-    padding: 10px;
-  }
-  .square-icon {
-    width: 60px;
-    height: 60px;
-    font-size: 1.4rem;
-  }
-  .square-card h4 {
-    font-size: 1rem;
-  }
-  .square-card p {
-    font-size: 0.85rem;
+  .skills-grid {
+    grid-template-columns: 1fr; /* 1 per row on mobile */
   }
 }
 </style>
+
+<!-- ✅ Bootstrap Icons (For Icons to Work) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
 
 
 <section class="portfolio-location" id="portfolio-location">
